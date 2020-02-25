@@ -1,14 +1,15 @@
 class Follower 
     attr_reader :name
-    attr_accessor :age, :life_motto, :cults
+    attr_accessor :age, :life_motto, :cult
 
     @@all = []
     @@all_cults = []
 
-    def initialize(name, age, life_motto)
+    def initialize(name, age, life_motto, cult)
       @name = name
       @age = age
       @life_motto = life_motto
+      @cult = cult
       @@all << self
     end
 
@@ -28,7 +29,14 @@ class Follower
         end
     end
 
-    def join_cult
+    def cults
+    end
+
+    def join_cult(cult)
+        @@all_cults << self
+    end
+
+    def self.of_a_certain_age(age)
     end
 
 

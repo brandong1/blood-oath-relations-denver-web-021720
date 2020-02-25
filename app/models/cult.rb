@@ -1,5 +1,5 @@
 class Cult 
-    attr_accessor :name, :location, :founding_year, :slogan, :recruit_follower
+    attr_accessor :name, :location, :founding_year, :slogan
 
     @@all = []
 
@@ -11,9 +11,7 @@ class Cult
         @location = location
         @founding_year = founding_year
         @slogan = slogan
-        @recruit_follower = recruit_follower
         @@all << self
-        @@cult_followers << self
     end
 
     def self.all
@@ -39,11 +37,11 @@ class Cult
         end
     end
 
-    def self.find_by_slogan(slogan) # don't really need this?
-        self.all.select do |cult_slogan|
-            cult_slogan.slogan == slogan
-        end
-    end
+    # def self.find_by_slogan(slogan) # don't really need this?
+    #     self.all.select do |cult_slogan|
+    #         cult_slogan.slogan == slogan
+    #     end
+    # end
 
     def cult_population
         @@cult_followers.size
