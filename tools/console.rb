@@ -12,7 +12,8 @@ Cult.new("One", "Denver", 2020, "One time.")
 Cult.new("Two", "Littleton", 2016, "Two times.")
 
 Follower.new("Brandon", 35, "Fuck it.", "Scientology")
-Follower.new("Joe", 30, "Whatevs.", "Scientology")
+Follower.new("jace", 35, "Fuck that.", "Scientology 2")
+Follower.new("Joe", 30, "Whatevs.", "Denver")
 Follower.new("Kat", 22, "Refactor it.", "Scientology")
 
 

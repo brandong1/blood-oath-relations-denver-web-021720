@@ -9,7 +9,7 @@ class Follower
       @name = name
       @age = age
       @life_motto = life_motto
-      @cult = cult
+      @cults = cults
       @@all << self
     end
 
@@ -37,8 +37,10 @@ class Follower
     end
 
     def self.of_a_certain_age(age)
+        self.all.select do |follower|
+            follower.age >= age
+        end
     end
-
 
 
 
