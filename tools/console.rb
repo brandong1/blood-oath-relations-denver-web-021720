@@ -11,6 +11,10 @@ Cult.new("Scientology 2", "Aurora", 1950, "We're making it up as we go!")
 Cult.new("One", "Denver", 2020, "One time.")
 Cult.new("Two", "Littleton", 2016, "Two times.")
 
+Follower.new("Brandon", 35, "Fuck it.")
+Follower.new("Joe", 30, "Whatevs.")
+Follower.new("Kat", 22, "Refactor it.")
+
 binding.pry
 
 puts "Mwahahaha!" # just in case pry is buggy and exits
