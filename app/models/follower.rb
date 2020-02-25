@@ -15,5 +15,13 @@ class Follower
         @@all
     end
 
+    def self.find_by_name(name)
+        self.all.find do |follower_name|
+            follower_name.name == name
+        end
+    end
+
+
+
 
 end
